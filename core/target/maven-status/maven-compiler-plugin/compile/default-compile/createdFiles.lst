@@ -1,0 +1,17 @@
+com\mycompany\invoice\AppV3.class
+com\mycompany\invoice\controller\InvoiceControllerInterface.class
+com\mycompany\invoice\repository\memory\InvoiceRepositoryMemory.class
+com\mycompany\invoice\controller\web\InvoiceControllerWeb.class
+com\mycompany\invoice\AppV4_SpringSansXML.class
+com\mycompany\invoice\service\InvoiceServiceInterface.class
+com\mycompany\invoice\AppV1.class
+com\mycompany\invoice\controller\keyboard\InvoiceControllerWithKeyboard.class
+com\mycompany\invoice\repository\InvoiceRepositoryInterface.class
+com\mycompany\invoice\service\digit\InvoiceServiceWithOnlyDigit.class
+com\mycompany\invoice\AppConfigPropertiesSource.class
+com\mycompany\invoice\entity\Invoice.class
+com\mycompany\invoice\AppV6_SpringBootApplicationAnnotation.class
+com\mycompany\invoice\AppV5_ConfigDansApp.class
+com\mycompany\invoice\service\prefix\InvoiceServiceWithPrefix.class
+com\mycompany\invoice\AppConfig.class
+com\mycompany\invoice\AppV2.class
