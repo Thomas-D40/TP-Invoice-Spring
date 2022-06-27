@@ -1,10 +1,14 @@
 package com.mycompany.invoice.web.form;
 
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 public class InvoiceForm {
 	private String number;
+	@NotBlank(message = "Attention, customerInvoice ne doit pas être vide")
 	private String customerInvoice;
+	@Size(min = 10, max = 20, message = "OrderNumber doit faire entre 10 et 20 caractères")
 	private String orderNumber;
 	
 	public InvoiceForm() {

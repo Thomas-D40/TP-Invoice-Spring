@@ -9,9 +9,11 @@
 <body>
 <h1>Voici le récap de votre facture</h1>
 
-<form method="post" th:action="@{/invoice}" th:object="${invoice}">
+<form method="post" th:action="@{/invoice}" th:object="${invoiceForm}">
   <p>Customer invoice: <input type="text" th:field="*{customerInvoice}"/></p>
+  <div th:if="${#fields.hasErrors('customerInvoice')}" th:errors="*{customerInvoice}"></div>
   <p>Order Number : <input type="text"  th:field="*{orderNumber}"/></p>
+  <div th:if="${#fields.hasErrors('orderNumber')}" th:errors="*{orderNumber}"></div>
 
   <input type="submit" value="OK">
 </form>
