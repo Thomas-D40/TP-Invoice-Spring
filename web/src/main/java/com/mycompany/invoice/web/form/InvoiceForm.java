@@ -1,12 +1,13 @@
-package com.mycompany.invoice.entity;
+package com.mycompany.invoice.web.form;
 
 
-public class Invoice {
+
+public class InvoiceForm {
 	private String number;
 	private String customerInvoice;
 	private String orderNumber;
 	
-	public Invoice() {
+	public InvoiceForm() {
 	}
 	
 	public String getNumber() {

@@ -14,7 +14,7 @@ public class InvoiceControllerWithKeyboard implements InvoiceControllerInterface
 	@Autowired
 	InvoiceServiceInterface service;
 	
-	public void createInvoice() {
+	public String createInvoice( Invoice invoice) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Customer name:");
 		String customerName = input.nextLine();
@@ -25,6 +25,7 @@ public class InvoiceControllerWithKeyboard implements InvoiceControllerInterface
 		
 		
 		service.createInvoice(newInvoice);
+		return "";
 	}
 	
 
