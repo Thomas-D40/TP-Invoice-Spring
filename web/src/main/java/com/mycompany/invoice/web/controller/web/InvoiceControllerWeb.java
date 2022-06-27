@@ -22,7 +22,7 @@ public class InvoiceControllerWeb {
 	@Autowired
 	InvoiceServiceInterface service;
 	
-	@PostMapping
+/*	@PostMapping
 	public String createInvoice(@ModelAttribute @Valid InvoiceForm invoiceForm, BindingResult results, Model model) {
 		if (results.hasErrors()) {
 			return "invoice-create-form";
@@ -34,7 +34,7 @@ public class InvoiceControllerWeb {
 		
 		return "invoice-created";
 		
-	}
+	}*/
 	
 
 	@GetMapping("/home")
@@ -43,20 +43,20 @@ public class InvoiceControllerWeb {
 		return "invoice-home";
 	}
 	
-	@GetMapping("/create-form")
+	/*@GetMapping("/create-form")
 	public String displayCreateForm(@ModelAttribute InvoiceForm invoiceForm) {
 		return "invoice-create-form";
-	}
+	}*/
 	
 	
 	
 	
 	
-	@GetMapping("/{id}")
+	/*@GetMapping("/{id}")
 	public String displayInvoice(@PathVariable("id") String id, Model model) {
 		model.addAttribute("invoice", service.getInvoiceById(id));
 		return "invoice-details";
-	}
+	}*/
 	
 	
 	

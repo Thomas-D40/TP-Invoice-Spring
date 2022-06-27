@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface InvoiceServiceInterface {
 	
-	public void createInvoice(Invoice invoice);
+	public Invoice createInvoice(Invoice invoice);
 	
 	public List<Invoice> getInvoiceList();
 	

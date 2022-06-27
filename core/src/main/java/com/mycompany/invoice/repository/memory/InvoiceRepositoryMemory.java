@@ -12,9 +12,10 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 	
 	public static List<Invoice> invoices = new ArrayList<>();
 	
-	public void createInvoice(Invoice invoice) {
+	public Invoice createInvoice(Invoice invoice) {
 		invoices.add(invoice);
 		System.out.println("Invoice added with number " + invoice.getNumber() + " for customer : " + invoice.getCustomerInvoice());
+		return invoice;
 	}
 	
 	@Override

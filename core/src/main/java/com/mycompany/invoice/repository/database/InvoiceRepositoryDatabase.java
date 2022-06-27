@@ -11,8 +11,8 @@ import java.util.List;
 @Primary
 public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
 	@Override
-	public void createInvoice(Invoice invoice) {
-	
+	public Invoice createInvoice(Invoice invoice) {
+		return invoice;
 	}
 	
 	@Override

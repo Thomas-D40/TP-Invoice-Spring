@@ -16,12 +16,13 @@ public class InvoiceServiceWithOnlyDigit implements InvoiceServiceInterface {
 	private static long lastId = 0;
 	
 	
-	public void createInvoice(Invoice invoice) {
+	public Invoice createInvoice(Invoice invoice) {
 		// donner une numéro à ma facture (le ++ altère effectivement lastId)
 		invoice.setNumber(String.valueOf(++lastId));
 		
 		// appelle le repository pour l'enregistrer
 		repository.createInvoice(invoice);
+		return invoice;
 	}
 	
 	@Override

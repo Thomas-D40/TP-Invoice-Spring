@@ -23,12 +23,13 @@ public class InvoiceServiceWithPrefix implements InvoiceServiceInterface {
 	private String prefix;
 	
 	
-	public void createInvoice(Invoice invoice) {
+	public Invoice createInvoice(Invoice invoice) {
 		// donner une numéro à ma facture (le ++ altère effectivement lastId)
 		invoice.setNumber(prefix + String.valueOf(++lastId));
 		
 		// appelle le repository pour l'enregistrer
 		repository.createInvoice(invoice);
+		return invoice;
 	}
 	
 	@Override

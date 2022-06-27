@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Bienvenue dans notre application de facturation</h1>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des factures</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 
-    <h2>Voici les actions réalisables</h2>
-    <ul>
-      <li>
-        <a href="create-form">Ajouter une facture</a>
-      </li>
-    </ul>
+</head>
+<body>
+<h1>Bienvenu(e) dans la page de gestion des factures.</h1>
+<h2>Actions disponibles : </h2>
+<ul>
+    <li><a href="create-form">Ajout de facture</a></li>
+</ul>
+<section class="container">
+    <div class="left-half">
+        <article id="invoice-list">
 
-    <table border="1">
-      <tr th:each="invoice: ${invoices}">
+        </article>
+    </div>
+    <div class="right-half">
+        <article id="invoice-detail">
 
-        <td><a th:href="${invoice.number}" th:text="${invoice.number}"></a></td>
-        <td th:text="${invoice.customerInvoice}">invoice.customerInvoice</td>
-      </tr>
-    </table>
+        </article>
+    </div>
+</section>
 
-  </body>
+<script th:src="@{/js/script.js}"></script>
+
+</body>
 </html>
